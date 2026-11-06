@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moria Deri · Computer Science Student</title>
+  <meta name="description" content="Moria Deri – Computer Science student at the Hebrew University of Jerusalem. Software development, systems and AI.">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop stop-color='%233b82f6'/><stop offset='1' stop-color='%23a855f7'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='%230a0a0c'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='28' fill='url(%23g)'>MD</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo" aria-label="Home">MD<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-sm btn-ghost nav-cta" id="navResume" target="_blank" rel="noopener">Resume</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="avatar-wrap reveal">
+          <div class="avatar-ring"></div>
+          <img id="avatar" class="avatar" alt="Moria Deri">
+        </div>
+        <p class="hello reveal" style="--d:.05s">Hi, I'm</p>
+        <h1 class="hero-name reveal" style="--d:.1s"><span class="grad" id="heroName"></span></h1>
+        <p class="hero-role reveal" style="--d:.15s" id="heroRole"></p>
+        <p class="hero-tagline reveal" style="--d:.2s" id="heroTagline"></p>
+        <div class="badges reveal" style="--d:.25s" id="heroBadges"></div>
+        <div class="cta reveal" style="--d:.3s">
+          <a href="#projects" class="btn btn-primary"><span>View Projects</span><i data-icon="arrow"></i></a>
+          <a class="btn btn-ghost" id="heroResume" target="_blank" rel="noopener" download><i data-icon="download"></i><span>Download Resume</span></a>
+        </div>
+        <div class="socials reveal" style="--d:.35s" id="heroSocials"></div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">About</span><h2>Who I am.</h2></div>
+        <div class="about-grid">
+          <div class="about-text reveal" id="aboutText"></div>
+          <div class="about-cards" id="aboutCards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Skills</span><h2>My toolkit.</h2></div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Projects</span><h2>What I've built.</h2></div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Leadership &amp; Experience</span><h2>Where I've led.</h2></div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card glass reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Get in touch.</h2>
+          <p>I'm always happy to talk about new opportunities, interesting projects, or anything tech.</p>
+          <div class="email-row">
+            <a class="email-link" id="emailLink"></a>
+            <button class="btn btn-sm btn-ghost copy-btn" id="copyBtn" aria-label="Copy email"><i data-icon="copy"></i><span>Copy</span></button>
+          </div>
+          <div class="socials" id="contactSocials"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Moria Deri · Built with HTML, CSS &amp; JavaScript</p>
+    <a href="#home" class="to-top" aria-label="Back to top"><i data-icon="arrowUp"></i></a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
