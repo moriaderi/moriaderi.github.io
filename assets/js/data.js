@@ -46,7 +46,7 @@ window.SITE = {
       title: "Text Analyzer",
       description: "A Python text-analysis engine built as a modular, class-based pipeline: cleans and normalizes text, counts word sequences, tracks people and their aliases across sentences, and builds a co-occurrence graph between them. Uses DFS to find connected groups of related sentences and backtracking to check for fixed-length paths between people, with efficient data structures throughout and a full unit-test suite.",
       tags: ["Python", "Graph Algorithms", "DFS & Backtracking", "Data Structures", "unittest"],
-      github: "",
+      github: "https://github.com/moriaderi/Intro-Final-Project",
       demo: ""
     },
     {
@@ -55,7 +55,7 @@ window.SITE = {
       title: "CI/CD & Cloud-Native Pipeline",
       description: "An end-to-end automated delivery pipeline for a Flask web application: containerized with Docker, built and tested with Jenkins, and deployed to Kubernetes through a GitOps workflow with ArgoCD.",
       tags: ["Docker", "Jenkins", "Kubernetes", "ArgoCD", "Flask"],
-      github: "",
+      github: "https://github.com/moriaderi/Devops-CI-CD-Project",
       demo: ""
     }
   ],
