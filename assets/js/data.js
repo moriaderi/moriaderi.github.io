@@ -34,9 +34,9 @@ window.SITE = {
   },
 
   skills: [
-    {icon: "code", title: "Languages", items: ["Python", "C", "C++", "Java", "JavaScript / TypeScript", "x64 Assembly"]},
+    {icon: "code", title: "Languages", items: ["Python", "C", "C++", "Java"]},
     {icon: "server", title: "Systems & DevOps", items: ["Linux / WSL", "Docker", "Git / Git Worktree", "VMware", "Socket Programming"]},
-    {icon: "layers", title: "Tools & Frameworks", items: ["React", "Node.js", "AI / Prompt Engineering", "Claude CLI tooling"]}
+    {icon: "layers", title: "Tools & Frameworks", items: ["React", "AI / Prompt Engineering", "Claude CLI tooling"]}
   ],
 
   projects: [
